@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20240419/pngtree-blue-and-purple-gradient-background-image_15717556.jpg');
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    background-color: aliceblue;
+    width: 90%;
+    max-width: 31.25em;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em 2em;
+    border-radius: 0.5em;
+    border: 3px solid #020332;
+}
+pre{
+    text-align: end;
+    margin-top:  2em;
+}
+span{
+    color: blueviolet;
+    text-decoration: underline;
+}
+.app-title{
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    color: #020332;
+    letter-spacing: 0.2em;
+
+}
+.input-wrapper{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+    margin: 2.5em 0;
+}
+#name,#submit{
+    font-size: 1em;
+}
+#name{
+    padding: 0.8em 0.5em;
+    border: 1px solid #020332;
+    border-radius: 0.5em;
+
+}
+#submit{
+    background-color: blueviolet;
+    color: aliceblue;
+    border: none;
+    border-radius: 0.5em;
+}
+.female{
+    background-color: #ff5f96;
+}
+.male{
+    background-color: #5a72e9;
+}
+#info{
+    padding: 2em 1em;
+    text-align: center;
+    border-radius: 0.9em;
+}
+#result-name{
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #edecec;
+}
+#gender-icon{
+    display: block;
+    width: 5em;
+    position: relative;
+    margin: 2em auto 1em auto;
+
+}
+#gender{
+    color: #ffff;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+
+}
+#prob{
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    color: #edecec;
+}
+
+/* for media query */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 2em 1em;
+    }
+    .input-wrapper {
+        grid-template-columns: 1fr;
+    }
+    #name, #submit {
+        font-size: 0.9em;
+        padding: 3px;
+    }
+    #gender-icon {
+        width: 4em;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container {
+        width: 80%;
+        padding: 1.8em;
+    }
+    #info{
+        padding: 2em 1em;
+        text-align: center;
+        border-radius: 0.9em;
+        height: 160px;
+
+    }
+    #result-name{
+        text-transform: capitalize;
+        font-weight: 400;
+        color: #edecec;
+        font-size: 1.5em;
+        margin-top: -1em;
+    }
+    #gender-icon{
+        display: block;
+        width: 5em;
+        position: relative;
+        margin: 1em auto 1em auto;
+
+    }
+    #gender{
+        color: #ffff;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: medium;
+        margin-bottom:0.5em;
+
+    }
+    #prob{
+        letter-spacing: 0.2em;
+        font-weight: 500;
+        color: #edecec;
+        font-size: medium;
+    }
+    .app-title {
+        font-size: 1em;
+    }
+    #name, #submit {
+        font-size: 0.8em;
+    }
+    #gender-icon {
+        width: 2.5em;
+    }
+}
+@media screen and (max-width: 320px) {
+    .container {
+        width: 100%;
+        padding: 1em;
+    }
+    .app-title {
+        font-size: 1em;
+    }
+    #name, #submit {
+        font-size: 0.7em;
+    }
+    #gender-icon {
+        width: 2.5em;
+    }
+     #result-name{
+        text-transform: capitalize;
+        font-weight: 400;
+        color: #edecec;
+        font-size: 1em;
+        margin-top: -1em;
+
+    }
+    
+    #gender-icon{
+        display: block;
+        width: 3em;
+        position: relative;
+        margin: 1em auto 1em auto;
+
+    }
+    #gender{
+        color: #ffff;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: small;
+        margin-bottom:0.2em;
+
+    }
+    #prob{
+        letter-spacing: 0.1em;
+        font-weight: 500;
+        color: #edecec;
+        font-size: smaller;
+    }
+    
+}
+@media screen and (max-width: 240px) {
+    .container {
+        width: 100%;
+        padding: 0.8em;
+    }
+    .app-title {
+        font-size: 0.9em;
+    }
+    #name, #submit {
+        font-size: 0.6em;
+    }
+    #gender-icon {
+        width: 2em;
+    }
+}
+@media screen and (max-width: 160px) {
+    .container {
+        width: 100%;
+        padding: 0.5em;
+    }
+    .app-title {
+        font-size: 0.8em;
+    }
+    #name, #submit {
+        font-size: 0.5em;
+    }
+    #gender-icon {
+        width: 1.5em;
+    }
+}
+@media screen and (max-width: 120px) {
+    .container {
+        width: 100%;
+        padding: 0.3em;
+    }
+    .app-title {
+        font-size: 0.7em;
+    }
+    #name, #submit {
+        font-size: 0.4em;
+    }
+    #gender-icon {
+        width: 1.2em;
+    }
+}
+
+@media screen and (max-width: 80px) {
+    .container {
+        width: 100%;
+        padding: 0.2em;
+    }
+    .app-title {
+        font-size: 0.6em;
+    }
+    #name, #submit {
+        font-size: 0.3em;
+    }
+    #gender-icon {
+        width: 1em;
+    }
+}
+@media screen and (max-width: 60px) {
+    .container {
+        width: 100%;
+        padding: 0.1em;
+    }
+    .app-title {
+        font-size: 0.5em;
+    }
+    #name, #submit {
+        font-size: 0.2em;
+    }
+    #gender-icon {
+        width: 0.8em;
+    }
+}
